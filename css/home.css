@@ -71,7 +71,6 @@
   align-items: center;
   justify-content: center;
   gap: var(--xxl, 48px);
-  text-align: center;
 }
 
 .intro__text {
