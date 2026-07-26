@@ -1,0 +1,31 @@
+.page-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0 24px;
+}
+
+.nav-pill {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-8);
+  border-radius: var(--radius-full);
+  background: var(--overlay-white-10);
+  box-shadow: var(--shadow-shot);
+  backdrop-filter: blur(12px);
+}
+
+.nav-pill__item {
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-full);
+  padding: var(--space-12) var(--space-20);
+  color: var(--text-primary);
+}
+
+.nav-pill__item.is-active {
+  background: var(--text-primary);
+  color: #fff;
+}
