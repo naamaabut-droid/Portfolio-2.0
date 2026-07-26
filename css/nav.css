@@ -12,9 +12,11 @@
   gap: var(--space-4);
   padding: var(--space-8);
   border-radius: var(--radius-full);
-  background: var(--overlay-white-10);
-  box-shadow: var(--shadow-shot);
-  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.004);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3);
 }
 
 .nav-pill__item {
