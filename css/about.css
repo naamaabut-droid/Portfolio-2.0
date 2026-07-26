@@ -189,6 +189,8 @@
   overflow-x: auto;
   scroll-snap-type: x proximity;
   padding-bottom: 4px;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 96px), transparent 100%);
+  mask-image: linear-gradient(to right, #000 calc(100% - 96px), transparent 100%);
 }
 
 .recs-track img {
