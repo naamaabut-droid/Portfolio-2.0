@@ -1,0 +1,23 @@
+.proj-header--wixel .proj-header__glow {
+  left: 36%;
+  top: -46%;
+}
+
+.proj-stat-triple {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.proj-stat-triple .proj-card__value {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.2;
+  letter-spacing: -1.68px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .proj-stat-triple { grid-template-columns: 1fr; }
+}
