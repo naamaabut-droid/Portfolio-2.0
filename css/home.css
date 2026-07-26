@@ -28,17 +28,7 @@
   top: -39px;
   z-index: 1;
   pointer-events: none;
-  animation: hero-glow-drift 2.6s cubic-bezier(0.7, -0.4, 0.4, 1.4) forwards;
-}
-
-@keyframes hero-glow-drift {
-  0% { translate: 240px 224px; }
-  70% { translate: 240px 224px; }
-  100% { translate: -500px -500px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero__glow { animation: none; }
+  animation: glow-drift 2.6s cubic-bezier(0.7, -0.4, 0.4, 1.4) forwards;
 }
 
 .hero .nav-pill {

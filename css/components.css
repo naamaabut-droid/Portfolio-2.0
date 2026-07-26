@@ -1,3 +1,13 @@
+@keyframes glow-drift {
+  0% { translate: 240px 224px; }
+  70% { translate: 240px 224px; }
+  100% { translate: -500px -500px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-drift-anim { animation: none !important; }
+}
+
 .main-container {
   width: 100%;
   display: flex;
