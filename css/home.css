@@ -59,13 +59,12 @@
 }
 
 .intro {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--xxl, 48px);
+  align-items: flex-start;
+  gap: var(--sm, 16px);
 }
 
 .intro__text {
@@ -74,6 +73,28 @@
   font-size: 24px;
   line-height: 1.4;
   letter-spacing: -0.48px;
+}
+
+.hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--xs, 8px);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.64px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  transition: gap 0.2s ease;
+}
+
+.hero-link:hover {
+  gap: var(--sm, 16px);
+}
+
+.hero-link__icon {
+  width: 24px;
+  height: 24px;
 }
 
 .work {
