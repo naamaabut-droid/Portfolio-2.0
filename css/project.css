@@ -109,9 +109,13 @@
 }
 
 .proj-tag {
-  padding: 8px 12px;
+  padding: 6px 16px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(17, 17, 19, 0.16);
+  background: rgba(0, 0, 0, 0.004);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.14px;
