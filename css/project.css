@@ -572,3 +572,21 @@
 .btn--dark .btn-fill { background: rgba(255, 255, 255, 0.16); }
 .btn--dark:hover { color: #fff; }
 .btn--dark:hover .btn__icon { filter: none; }
+
+/* ---------- Pannable wide sequence image (flattened flow strips) ---------- */
+
+.flow.proj-pan-flow {
+  gap: 0;
+  cursor: grab;
+}
+
+.flow.proj-pan-flow img {
+  height: 520px;
+  width: auto;
+  max-width: none;
+  border-radius: var(--radius-xxs);
+}
+
+@media (max-width: 900px) {
+  .flow.proj-pan-flow img { height: 320px; }
+}

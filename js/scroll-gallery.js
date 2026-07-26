@@ -76,9 +76,32 @@
     });
   }
 
+  function dragToScroll() {
+    document.querySelectorAll('.proj-pan-flow').forEach((row) => {
+      if (row.dataset.dragInit) return;
+      row.dataset.dragInit = '1';
+      let isDown = false, startX = 0, startScroll = 0;
+      row.addEventListener('pointerdown', (e) => {
+        isDown = true;
+        row.setPointerCapture(e.pointerId);
+        startX = e.clientX;
+        startScroll = row.scrollLeft;
+        row.style.cursor = 'grabbing';
+      });
+      row.addEventListener('pointermove', (e) => {
+        if (!isDown) return;
+        row.scrollLeft = startScroll - (e.clientX - startX);
+      });
+      const release = () => { isDown = false; row.style.cursor = 'grab'; };
+      row.addEventListener('pointerup', release);
+      row.addEventListener('pointerleave', release);
+    });
+  }
+
   function init() {
     wrapAndArrows();
     dots();
+    dragToScroll();
   }
 
   if (document.readyState === 'complete') setTimeout(init, 60);
