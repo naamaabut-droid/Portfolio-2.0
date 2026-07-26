@@ -158,7 +158,7 @@
           <p>Pattern inspirations</p>
           <p class="sub">Click to enlarge.</p>
         </div>
-        <img src="../assets/projects/finaloop/pattern-inspirations.png" alt="Reference patterns from other import/mapping flows" style="width:100%; border-radius: var(--radius-xxs);" />
+        <img src="../assets/projects/finaloop/image.png" alt="Reference patterns from other import/mapping flows" style="width:100%;" />
       </div>
 
       <div class="proj-col" style="max-width:800px;">
@@ -172,35 +172,48 @@
         <p class="proj-heading">Import without friction</p>
         <p class="proj-body">Drag-and-drop with instant parsing feedback. Users can add more invoices or leave mid-flow — parsed files auto-save to a dedicated dashboard tab.</p>
       </div>
-      <div class="proj-media-frame" style="aspect-ratio: 2878/1634; max-width:1080px;">Concept mockup — not shipped</div>
+      <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2878/1634; max-width:1080px;">
+        <video src="../assets/projects/finaloop/finaloop-step1.mp4" autoplay muted loop playsinline></video>
+      </div>
 
       <div class="proj-col" style="max-width:800px;">
         <p class="proj-eyebrow">Execution/02</p>
         <p class="proj-heading">AI does the matching</p>
         <p class="proj-body">AI matches extracted products to existing SKUs, flags missing data, and filters line items that need attention.</p>
       </div>
-      <div class="proj-media-frame" style="aspect-ratio: 2878/1634; max-width:1080px;">Concept mockup — not shipped</div>
+      <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2878/1634; max-width:1080px;">
+        <video src="../assets/projects/finaloop/finaloop-step2.mp4" autoplay muted loop playsinline></video>
+      </div>
 
       <div class="proj-col" style="max-width:800px;">
         <p class="proj-eyebrow">Execution/03</p>
         <p class="proj-heading">Review, then commit</p>
         <p class="proj-body">A scannable review grid with validation flags, filtering, and bulk editing — line items open in a modal for quantity, price, discounts and shipping. Nothing posts to the books until explicit confirmation.</p>
       </div>
+      <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2878/1634; max-width:1080px;">
+        <video src="../assets/projects/finaloop/finaloop-step3.mp4" autoplay muted loop playsinline></video>
+      </div>
 
       <div class="proj-media-panel">
         <div class="proj-media-panel__caption"><p>Full flow</p><p class="sub">Click to enlarge.</p></div>
-        <div class="proj-media-frame" style="aspect-ratio: 2882/1640;">Concept mockup — not shipped</div>
+        <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2882/1640;">
+          <video src="../assets/projects/finaloop/finaloop-fullflow.mp4" autoplay muted loop playsinline></video>
+        </div>
       </div>
 
       <div class="proj-media-panel">
         <div class="proj-media-panel__caption"><p>Edge Cases</p><p class="sub">Click to enlarge.</p></div>
-        <div class="proj-media-grid">
-          <figure class="proj-media-item">
-            <div class="proj-media-frame" style="aspect-ratio: 2880/1634;">Concept mockup — not shipped</div>
+        <div class="flow" style="max-width: 1080px;">
+          <figure class="proj-media-item" style="width: 490px;">
+            <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2880/1634;">
+              <video src="../assets/projects/finaloop/finaloop-duplicated.mp4" autoplay muted loop playsinline></video>
+            </div>
             <figcaption>Import duplicated invoice</figcaption>
           </figure>
-          <figure class="proj-media-item">
-            <div class="proj-media-frame" style="aspect-ratio: 2880/1634;">Concept mockup — not shipped</div>
+          <figure class="proj-media-item" style="width: 490px;">
+            <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 2880/1634;">
+              <video src="../assets/projects/finaloop/finaloop-errors.mp4" autoplay muted loop playsinline></video>
+            </div>
             <figcaption>Error States - Missing Data</figcaption>
           </figure>
         </div>
@@ -210,17 +223,23 @@
         <div class="proj-media-panel__header">
           <div class="proj-media-panel__caption" style="text-align:left;"><p>More Features</p><p class="sub">Click to enlarge.</p></div>
         </div>
-        <div class="proj-media-row">
-          <figure class="proj-media-item">
-            <div class="proj-media-frame" style="aspect-ratio: 484/296;">Concept mockup — not shipped</div>
+        <div class="flow" style="max-width: 1080px;">
+          <figure class="proj-media-item" style="width: 322px;">
+            <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 484/296;">
+              <video src="../assets/projects/finaloop/finaloop-bulkedit.mp4" autoplay muted loop playsinline></video>
+            </div>
             <figcaption>Bulk edit</figcaption>
           </figure>
-          <figure class="proj-media-item">
-            <div class="proj-media-frame" style="aspect-ratio: 484/295;">Concept mockup — not shipped</div>
+          <figure class="proj-media-item" style="width: 322px;">
+            <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 484/295;">
+              <video src="../assets/projects/finaloop/finaloop-addinvoices.mp4" autoplay muted loop playsinline></video>
+            </div>
             <figcaption>Add invoices</figcaption>
           </figure>
-          <figure class="proj-media-item">
-            <div class="proj-media-frame" style="aspect-ratio: 484/295;">Concept mockup — not shipped</div>
+          <figure class="proj-media-item" style="width: 322px;">
+            <div class="proj-media-frame proj-media-frame--video" style="aspect-ratio: 484/295;">
+              <video src="../assets/projects/finaloop/finaloop-lineitem.mp4" autoplay muted loop playsinline></video>
+            </div>
             <figcaption>Clickable Line item</figcaption>
           </figure>
         </div>
@@ -319,5 +338,7 @@
       </div>
     </div>
   </section>
+  <script src="../js/fill-button.js" defer></script>
+  <script src="../js/scroll-gallery.js" defer></script>
 </body>
 </html>
