@@ -1,0 +1,25 @@
+.proj-header--penny .proj-header__glow {
+  left: 45%;
+  top: -3%;
+}
+
+.proj-quote-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.proj-quote-card {
+  background: var(--surface-white);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xxs);
+  padding: 24px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+@media (max-width: 900px) {
+  .proj-quote-grid { grid-template-columns: 1fr; }
+}
