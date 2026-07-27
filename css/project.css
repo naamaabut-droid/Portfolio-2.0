@@ -534,43 +534,6 @@
   .dots-pagination .dot.active { width: 18px; background: var(--text-primary); }
 }
 
-/* ---------- Button cursor-origin fill (js/fill-button.js) ---------- */
-
-.btn {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-  transition: color 0.2s ease, transform 0.18s cubic-bezier(0.2, 0.7, 0.3, 1.2);
-}
-
-.btn:active { transform: scale(0.97); }
-
-.btn .btn-fill {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: var(--text-primary);
-  clip-path: circle(0px at 50% 50%);
-  pointer-events: none;
-  will-change: clip-path;
-}
-
-.btn .btn-label {
-  position: relative;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  gap: inherit;
-}
-
-.btn:hover { color: #fff; }
-.btn:hover .btn__icon { filter: invert(1); }
-.btn__icon { transition: filter 0.2s ease, transform 0.2s ease; }
-.btn:hover .btn__icon { transform: translateX(2px); }
-
-.btn--dark .btn-fill { background: rgba(255, 255, 255, 0.16); }
-.btn--dark:hover { color: #fff; }
-.btn--dark:hover .btn__icon { filter: none; }
 
 /* ---------- Pannable wide sequence image (flattened flow strips) ---------- */
 
