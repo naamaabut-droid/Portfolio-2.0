@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: var(--radius-3xl) var(--xxl, 48px);
+  padding: var(--xxl, 48px);
 }
 
 .hero__bg {
@@ -37,7 +37,6 @@
   z-index: 2;
   flex: 1 0 0;
   width: 100%;
-  max-width: 1344px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
