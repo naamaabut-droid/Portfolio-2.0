@@ -285,7 +285,7 @@
 
 .contact-section__actions {
   display: flex;
-  gap: var(--space-8, 8px);
+  gap: var(--space-16, 16px);
   align-items: center;
 }
 
@@ -295,10 +295,23 @@
   height: 24px;
 }
 
+.contact-icon:first-child {
+  background: #fff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contact-icon img {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+.contact-icon:first-child img {
+  width: 20px;
+  height: 16px;
 }
 
 @media (max-width: 900px) {
