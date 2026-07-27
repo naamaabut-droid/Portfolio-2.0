@@ -23,3 +23,41 @@
 @media (max-width: 900px) {
   .proj-quote-grid { grid-template-columns: 1fr; }
 }
+
+.proj-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+  width: 100%;
+}
+
+.proj-team-grid__col {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.proj-team-grid__col--end { justify-content: flex-end; padding-bottom: 72px; }
+.proj-team-grid__col--start { padding-top: 72px; }
+
+.proj-team-card img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-s);
+  object-fit: cover;
+}
+
+.proj-team-card figcaption {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.proj-team-card__name { font-weight: 500; color: var(--text-primary); }
+.proj-team-card__role { font-style: italic; color: var(--text-secondary); }
+
+@media (max-width: 900px) {
+  .proj-team-grid { grid-template-columns: 1fr; gap: 24px; }
+  .proj-team-grid__col { gap: 24px; padding: 0 !important; }
+}
