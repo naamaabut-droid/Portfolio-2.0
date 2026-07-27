@@ -1,8 +1,8 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,14 +47,14 @@
 
 .hero__eyebrow {
   font-weight: 400;
-  font-size: clamp(24px, calc(8vh - 16px), 48px);
+  font-size: 48px;
   line-height: 1.1;
   letter-spacing: -0.48px;
 }
 
 .hero__title {
   font-weight: 500;
-  font-size: clamp(96px, calc(48vh - 144px), 240px);
+  font-size: 240px;
   line-height: 0.85;
   letter-spacing: -7.2px;
 }
