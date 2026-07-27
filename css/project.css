@@ -3,12 +3,12 @@
 .proj-header {
   position: relative;
   width: 100%;
-  min-height: 656px;
+  min-height: 700px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   overflow: hidden;
-  padding: 88px 48px;
+  padding: 60px 48px;
 }
 
 .proj-header__bg {
@@ -110,7 +110,7 @@
 }
 
 .proj-tag {
-  padding: 6px 16px;
+  padding: 8px 12px;
   border-radius: var(--radius-full);
   background: rgba(0, 0, 0, 0.004);
   backdrop-filter: blur(4px);
