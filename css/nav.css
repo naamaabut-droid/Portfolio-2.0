@@ -8,9 +8,8 @@
 
 .nav-pill {
   position: fixed;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 48px;
+  right: 48px;
   z-index: 100;
   display: flex;
   align-items: center;

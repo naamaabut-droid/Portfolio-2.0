@@ -271,6 +271,7 @@
   width: 535px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -284,11 +285,24 @@
 
 .contact-section__actions {
   display: flex;
-  gap: 12px;
+  gap: var(--space-8, 8px);
+  align-items: center;
+}
+
+.contact-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.contact-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 @media (max-width: 900px) {
   .contact-section__content { flex-direction: column; height: auto; gap: 40px; }
-  .contact-section__right { width: 100%; }
+  .contact-section__right { width: 100%; align-items: flex-start; }
   .contact-section__title { font-size: 44px; }
 }
