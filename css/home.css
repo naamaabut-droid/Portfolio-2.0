@@ -91,6 +91,12 @@
 
 .hero-link:hover {
   gap: var(--sm, 16px);
+  font-weight: 500;
+}
+
+.hero-link:active {
+  text-decoration: underline;
+  text-underline-position: from-font;
 }
 
 .hero-link__icon {
