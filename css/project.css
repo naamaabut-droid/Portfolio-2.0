@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 700px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   overflow: hidden;
@@ -67,7 +68,7 @@
 }
 
 .proj-header__back-label {
-  padding: 12px 20px 12px 0;
+  padding: 12px 20px 12px 12px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.14px;
@@ -272,7 +273,7 @@
 .proj-intro-block {
   width: 100%;
   max-width: 1160px;
-  background: var(--surface-muted);
+  background: #1e1e1e;
   border-radius: var(--radius-xxs);
   padding: 24px;
   display: flex;
@@ -291,7 +292,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.14px;
-  color: var(--text-secondary);
+  color: #f5f4f1;
 }
 
 .proj-intro-block__text {
@@ -299,7 +300,7 @@
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: -0.14px;
-  color: var(--text-primary);
+  color: #fff;
 }
 
 @media (max-width: 900px) {
