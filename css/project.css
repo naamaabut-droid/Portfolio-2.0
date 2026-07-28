@@ -384,6 +384,7 @@
 
 .proj-media-item--numbered {
   gap: 12px;
+  width: 300px;
 }
 
 .proj-media-item--numbered img {
@@ -410,6 +411,15 @@
   font-weight: 500;
   padding-top: 2px;
   flex-shrink: 0;
+}
+
+.proj-media-item--numbered figcaption > span:last-child {
+  min-width: 0;
+  flex: 1 0 0;
+}
+
+.proj-media-item--tall {
+  width: 225px;
 }
 
 .proj-media-item--tall img {
