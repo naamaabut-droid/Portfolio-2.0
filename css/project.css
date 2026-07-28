@@ -381,6 +381,44 @@
   color: var(--text-secondary);
 }
 
+.proj-media-item--numbered {
+  gap: 12px;
+}
+
+.proj-media-item--numbered img {
+  height: 190px;
+  width: 300px;
+  object-fit: cover;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xs);
+}
+
+.proj-media-item--numbered figcaption {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: -0.14px;
+  color: var(--text-secondary);
+}
+
+.proj-media-item--numbered .num {
+  font-weight: 500;
+  padding-top: 2px;
+  flex-shrink: 0;
+}
+
+.proj-media-item--numbered .num--accent {
+  font-family: var(--font-serif-italic);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent-indigo);
+  letter-spacing: 0.56px;
+}
+
 .proj-media-row {
   display: flex;
   gap: 16px;
