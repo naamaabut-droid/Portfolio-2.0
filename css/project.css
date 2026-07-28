@@ -412,6 +412,12 @@
   flex-shrink: 0;
 }
 
+.proj-media-item--tall img {
+  width: 225px;
+  height: 487px;
+  border-radius: var(--radius-s, 12px);
+}
+
 .proj-media-item--numbered .num--accent {
   font-family: var(--font-serif-italic);
   font-style: italic;
