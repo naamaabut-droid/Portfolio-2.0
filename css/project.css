@@ -479,7 +479,6 @@
   gap: 16px;
   width: 100%;
   overflow-x: auto;
-  scroll-snap-type: x proximity;
   scrollbar-width: none;
 }
 
@@ -487,7 +486,6 @@
 
 .flow > * {
   flex-shrink: 0;
-  scroll-snap-align: start;
 }
 
 .scroll-wrap {
@@ -502,17 +500,17 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 64px;
+  width: 40px;
   z-index: 4;
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.25s ease;
 }
 
-.scroll-wrap::before { left: 0; background: linear-gradient(to right, var(--fade-bg), rgba(0, 0, 0, 0)); }
-.scroll-wrap::after { right: 0; background: linear-gradient(to left, var(--fade-bg), rgba(0, 0, 0, 0)); }
-.scroll-wrap.can-prev::before { opacity: 1; }
-.scroll-wrap.can-next::after { opacity: 1; }
+.scroll-wrap::before { left: 0; background: linear-gradient(to right, var(--fade-bg), transparent); }
+.scroll-wrap::after { right: 0; background: linear-gradient(to left, var(--fade-bg), transparent); }
+.scroll-wrap.can-prev::before { opacity: 0.55; }
+.scroll-wrap.can-next::after { opacity: 0.55; }
 
 .scroll-arrow {
   position: absolute;

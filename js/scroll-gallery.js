@@ -10,6 +10,7 @@
       wrap.className = 'scroll-wrap';
       row.parentNode.insertBefore(wrap, row);
       wrap.appendChild(row);
+      row.scrollLeft = 0;
 
       const mkBtn = (dir) => {
         const b = document.createElement('button');
