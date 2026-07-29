@@ -129,14 +129,15 @@
 
 .proj-tags {
   width: 100%;
-  max-width: 490px;
+  max-width: 420px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 8px;
+  padding-top: 12px;
 }
 
 .proj-tag {
-  padding: 8px 12px;
+  padding: 10px 20px;
   border-radius: var(--radius-full);
   background: rgba(0, 0, 0, 0.004);
   backdrop-filter: blur(4px);
