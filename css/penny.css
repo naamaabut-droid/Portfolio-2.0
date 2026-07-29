@@ -91,3 +91,29 @@
   .proj-team-grid { grid-template-columns: 1fr; gap: 24px; }
   .proj-team-grid__col { gap: 24px; padding: 0 !important; }
 }
+
+.proj-storybook-stack {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1000 / 391.778;
+}
+
+.proj-storybook-stack img {
+  position: absolute;
+  width: 60.579%;
+  height: 83.83%;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xs, 8px);
+  object-fit: cover;
+}
+
+.proj-storybook-stack__front {
+  left: 0;
+  top: 0;
+  box-shadow: 0px 18px 50px 0px rgba(17, 17, 19, 0.14), 0px 2px 6px 0px rgba(17, 17, 19, 0.08);
+}
+
+.proj-storybook-stack__back {
+  left: 39.421%;
+  top: 16.058%;
+}
