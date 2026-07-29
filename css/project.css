@@ -790,3 +790,53 @@
 @media (max-width: 900px) {
   .flow.proj-pan-flow img { height: 320px; }
 }
+
+/* ---------- Lightbox (click-to-enlarge) ---------- */
+
+.is-zoomable {
+  cursor: zoom-in;
+}
+
+.site-lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(17, 17, 19, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  z-index: 1000;
+}
+
+.site-lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.site-lightbox__img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: var(--radius-xxs);
+  cursor: zoom-out;
+}
+
+.site-lightbox__close {
+  position: fixed;
+  top: 24px;
+  right: 32px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 36px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 8px;
+}
+
+body.lightbox-open {
+  overflow: hidden;
+}
