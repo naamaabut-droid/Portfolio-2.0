@@ -43,6 +43,23 @@
   .proj-layouts { flex-direction: column; gap: 24px; }
 }
 
+.proj-examples-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--max, 72px);
+}
+
+.proj-examples-grid img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius-xs, 8px);
+}
+
+@media (max-width: 900px) {
+  .proj-examples-grid { grid-template-columns: 1fr; gap: var(--ml, 24px); }
+}
+
 /* Full-bleed rows, continuous horizontal marquee, alternating direction per row — matches the reference implementation */
 .proj-bugs-mapping {
   width: 100%;
