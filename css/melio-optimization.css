@@ -18,6 +18,31 @@
   max-width: 100%;
 }
 
+.proj-layouts {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  align-items: flex-start;
+  gap: 88px;
+  padding: 0 var(--xl, 40px);
+}
+
+.proj-layouts img {
+  flex: 1 0 0;
+  min-width: 0;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.proj-layouts img:nth-child(1) { aspect-ratio: 912/855; }
+.proj-layouts img:nth-child(2) { aspect-ratio: 912/608; }
+.proj-layouts img:nth-child(3) { aspect-ratio: 912/670; }
+
+@media (max-width: 900px) {
+  .proj-layouts { flex-direction: column; gap: 24px; }
+}
+
 /* Full-bleed rows, continuous horizontal marquee, alternating direction per row — matches the reference implementation */
 .proj-bugs-mapping {
   width: 100%;
