@@ -229,7 +229,7 @@
   width: 40px;
   margin-left: var(--space-24, 24px);
   opacity: 1;
-  border-color: var(--border-default, #cccbc5);
+  border-color: #1e1e1e;
 }
 
 .project-card:active .project-card__arrow {
