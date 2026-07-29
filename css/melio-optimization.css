@@ -18,6 +18,60 @@
   max-width: 100%;
 }
 
+/* Full-bleed rows, continuous horizontal marquee, alternating direction per row — matches the reference implementation */
+.proj-bugs-mapping {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ml, 24px);
+}
+
+.bugs-band {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm, 16px);
+  overflow: hidden;
+}
+
+.bugs-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.bugs-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.bugs-track img {
+  height: 277px;
+  width: auto;
+  max-width: none;
+  display: block;
+  flex: none;
+  border-radius: var(--radius-xxs);
+}
+
+.bugs-row:nth-child(odd) .bugs-track { animation: bugs-marq-l 24s linear infinite; }
+.bugs-row:nth-child(even) .bugs-track { animation: bugs-marq-r 53s linear infinite; }
+
+@keyframes bugs-marq-l { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes bugs-marq-r { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+
+.bugs-row:hover .bugs-track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bugs-track { animation: none; transform: none; }
+}
+
+@media (max-width: 480px) {
+  .bugs-track img { height: 200px; }
+}
+
 .proj-flows-mapping {
   width: 100%;
   max-width: 100%;
