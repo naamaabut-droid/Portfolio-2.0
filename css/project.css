@@ -129,7 +129,6 @@
 
 .proj-tags {
   width: 100%;
-  max-width: 420px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
