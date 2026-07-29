@@ -18,6 +18,43 @@
   max-width: 100%;
 }
 
+.proj-flows-mapping {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--xl, 40px);
+  overflow-x: auto;
+}
+
+.proj-flows-mapping__caption {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.proj-flows-mapping__columns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--max, 72px);
+  padding: 0 24px;
+}
+
+.proj-flows-mapping__columns img {
+  height: 640px;
+  width: auto;
+  max-width: none;
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .proj-flows-mapping__columns { gap: 32px; }
+  .proj-flows-mapping__columns img { height: 400px; }
+}
+
 .proj-funnel {
   width: 100%;
   display: flex;
