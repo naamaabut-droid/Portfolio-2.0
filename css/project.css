@@ -321,6 +321,12 @@
   gap: var(--ml, 24px);
 }
 
+.proj-media-panel--bare {
+  background: none;
+  padding: 0;
+  gap: var(--sm, 16px);
+}
+
 .proj-media-panel__caption {
   text-align: center;
   font-size: 12px;
