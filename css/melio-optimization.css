@@ -43,6 +43,51 @@
   .proj-layouts { flex-direction: column; gap: 24px; }
 }
 
+/* Full-bleed strip from the left edge, scrollable sideways — screens slide in from the side on first view */
+.proj-layouts-screens {
+  display: flex;
+  gap: var(--sm, 16px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 var(--xl, 40px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.proj-layouts-screens::-webkit-scrollbar {
+  display: none;
+}
+
+.proj-layouts-screens img {
+  height: 388px;
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(120px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.proj-layouts-screens img:nth-child(2) { transition-delay: 0.09s; }
+.proj-layouts-screens img:nth-child(3) { transition-delay: 0.18s; }
+.proj-layouts-screens img:nth-child(4) { transition-delay: 0.27s; }
+
+.proj-layouts-screens.strip-in img {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proj-layouts-screens img { opacity: 1; transform: none; transition: none; }
+}
+
+@media (max-width: 480px) {
+  .proj-layouts-screens img { height: 240px; }
+}
+
 .proj-examples-grid {
   width: 100%;
   display: grid;

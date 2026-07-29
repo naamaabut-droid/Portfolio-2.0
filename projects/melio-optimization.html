@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div class="proj-col" style="max-width:800px; align-items:center; gap:24px;">
+      <div class="proj-col" style="max-width:1080px; align-items:center; gap:24px;">
         <div class="proj-media-panel" style="max-width:1080px;">
           <div class="proj-media-panel__caption"><p>Enter vendor's payment delivery details screen.</p><p class="sub">Click to enlarge.</p></div>
           <div class="proj-media-grid" style="max-width:820px;">
@@ -238,9 +238,16 @@
       <img src="../assets/projects/melio-optimization/external-layout-1.png" alt="External layout guideline" />
     </div>
 
+    <div class="proj-layouts-screens">
+      <img src="../assets/projects/melio-optimization/full screen 2.png" alt="Full-screen responsive layout" />
+      <img src="../assets/projects/melio-optimization/6 columns 2.png" alt="6-column responsive layout" />
+      <img src="../assets/projects/melio-optimization/split screen-1 2.png" alt="Split-screen layout detail" />
+      <img src="../assets/projects/melio-optimization/external layout-1 2.png" alt="External layout detail" />
+    </div>
+
     <div class="proj-container">
 
-      <div class="proj-col" style="max-width:800px; align-items:center; gap:24px;">
+      <div class="proj-col" style="max-width:1080px; align-items:center; gap:24px;">
         <div class="proj-media-panel" style="max-width:1080px;">
           <div class="proj-media-panel__caption"><p>More examples (Before → Left, After → Right)</p><p class="sub">Click to enlarge.</p></div>
           <div class="proj-examples-grid">
@@ -362,5 +369,17 @@
   <script src="../js/fill-button.js" defer></script>
   <script src="../js/scroll-gallery.js" defer></script>
   <script src="../js/project-card-hover.js" defer></script>
+  <script>
+    (function () {
+      var strip = document.querySelector('.proj-layouts-screens');
+      if (!strip) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { strip.classList.add('strip-in'); io.disconnect(); }
+        });
+      }, { threshold: 0.25 });
+      io.observe(strip);
+    })();
+  </script>
 </body>
 </html>
