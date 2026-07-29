@@ -55,41 +55,50 @@
 }
 
 .proj-team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 48px;
+  display: flex;
+  gap: var(--ml, 24px);
+  align-items: flex-start;
+  justify-content: center;
   width: 100%;
 }
 
 .proj-team-grid__col {
   display: flex;
   flex-direction: column;
-  gap: 72px;
+  gap: var(--max, 72px);
 }
 
-.proj-team-grid__col--end { justify-content: flex-end; padding-bottom: 72px; }
-.proj-team-grid__col--start { padding-top: 72px; }
+.proj-team-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm, 16px);
+  width: 320px;
+  margin: 0;
+}
 
 .proj-team-card img {
   display: block;
-  width: 100%;
-  border: 1px solid var(--border-default);
+  width: 320px;
   border-radius: var(--radius-s);
   object-fit: cover;
 }
 
-.proj-team-card figcaption {
-  margin-top: 8px;
+.proj-team-card--bordered img {
+  border: 1px solid var(--border-default);
+}
+
+.proj-team-card__caption {
   font-size: 12px;
   line-height: 1.4;
+  color: var(--text-secondary);
 }
 
 .proj-team-card__name { font-weight: 500; color: var(--text-primary); }
-.proj-team-card__role { font-style: italic; color: var(--text-secondary); }
 
 @media (max-width: 900px) {
-  .proj-team-grid { grid-template-columns: 1fr; gap: 24px; }
-  .proj-team-grid__col { gap: 24px; padding: 0 !important; }
+  .proj-team-grid { flex-direction: column; gap: 24px; }
+  .proj-team-grid__col { gap: 24px; }
+  .proj-team-card, .proj-team-card img { width: 100%; }
 }
 
 .proj-storybook-stack {
