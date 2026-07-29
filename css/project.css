@@ -345,8 +345,12 @@
 }
 
 .proj-media-frame--video {
-  border: none;
   overflow: hidden;
+  border-radius: var(--radius-s, 12px);
+}
+
+.proj-media-item .proj-media-frame--video {
+  border-radius: var(--radius-xxs);
 }
 
 .proj-media-frame video {
