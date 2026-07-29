@@ -84,29 +84,47 @@
 .hero-link {
   display: inline-flex;
   align-items: center;
-  gap: var(--xs, 8px);
+  gap: 8px;
+  padding: 20px 32px;
+  margin: -20px -32px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-color: transparent;
   font-weight: 400;
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: -0.64px;
   color: var(--text-primary);
   white-space: nowrap;
-  transition: gap 0.2s ease;
+  transition: border-color 0.25s ease, background-color 0.25s ease, color 0.25s ease;
 }
 
 .hero-link:hover {
-  gap: var(--sm, 16px);
+  border-color: #1e1e1e;
   font-weight: 500;
 }
 
+.hero-link:hover .hero-link__icon {
+  max-width: 24px;
+  opacity: 1;
+}
+
 .hero-link:active {
-  text-decoration: underline;
-  text-underline-position: from-font;
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  color: #fff;
+}
+
+.hero-link:active .hero-link__icon {
+  filter: brightness(0) invert(1);
 }
 
 .hero-link__icon {
   width: 24px;
   height: 24px;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.25s ease, opacity 0.2s ease;
 }
 
 .work {
