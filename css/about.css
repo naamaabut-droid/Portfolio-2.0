@@ -189,7 +189,6 @@
   width: 100%;
   padding: 0 0 4px var(--xxl, 48px);
   overflow-x: auto;
-  scroll-snap-type: x proximity;
 }
 
 .recs-track img {
@@ -198,7 +197,6 @@
   flex-shrink: 0;
   object-fit: cover;
   border-radius: var(--radius-xxs);
-  scroll-snap-align: start;
 }
 
 @media (max-width: 900px) {
