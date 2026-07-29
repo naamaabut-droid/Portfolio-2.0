@@ -1,11 +1,20 @@
-@keyframes glow-drift {
-  0% { translate: 240px 224px; }
-  70% { translate: 240px 224px; }
-  100% { translate: -500px -500px; }
+.hero__glow,
+.proj-header__glow {
+  transition: translate 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: glow-breathe 4s ease-in-out infinite;
+}
+
+@keyframes glow-breathe {
+  0%, 100% { opacity: 0.8; scale: 1; }
+  50% { opacity: 1; scale: 1.08; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .glow-drift-anim { animation: none !important; }
+  .hero__glow,
+  .proj-header__glow {
+    animation: none;
+    transition: none;
+  }
 }
 
 .main-container {
