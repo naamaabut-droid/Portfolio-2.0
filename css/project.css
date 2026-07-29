@@ -389,6 +389,10 @@
   align-items: center;
 }
 
+.proj-tile-row--spread {
+  justify-content: space-between;
+}
+
 .proj-tile-group {
   display: flex;
   flex-direction: column;
