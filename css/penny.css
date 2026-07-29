@@ -246,3 +246,31 @@
 @media (max-width: 900px) {
   .knowledge-grid { grid-template-columns: 1fr; }
 }
+
+.slack-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 984 / 529;
+}
+
+.slack-stage img {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xs);
+}
+
+.slack-stage .sl-2 { left: 0; top: 0; width: 68.42%; }
+.slack-stage .sl-3 { left: 72.54%; top: 5.29%; width: 27.45%; }
+.slack-stage .sl-1 {
+  left: 31.58%;
+  top: 36.48%;
+  width: 68.42%;
+  box-shadow: 0px 18px 50px 0px rgba(17, 17, 19, 0.14), 0px 2px 6px 0px rgba(17, 17, 19, 0.08);
+}
+
+@media (max-width: 900px) {
+  .slack-stage { aspect-ratio: auto; display: flex; flex-direction: column; gap: 16px; }
+  .slack-stage img { position: static; width: 100%; }
+}
