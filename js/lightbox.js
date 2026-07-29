@@ -25,7 +25,7 @@
     if (e.key === 'Escape') close();
   });
 
-  document.querySelectorAll('.proj-media-panel').forEach(function (panel) {
+  document.querySelectorAll('.proj-media-panel, .screens-band').forEach(function (panel) {
     var sub = panel.querySelector('.sub');
     if (!sub || sub.textContent.toLowerCase().indexOf('enlarge') === -1) return;
     panel.querySelectorAll('img').forEach(function (img) {

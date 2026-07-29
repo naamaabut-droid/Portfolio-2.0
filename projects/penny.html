@@ -236,8 +236,21 @@
       </div>
     </div>
 
-    <div class="proj-flat-section proj-flat-section--bleed">
-      <img src="../assets/projects/penny/screens-marquee.png" alt="Product screens built with Penny components" />
+    <div class="screens-band" id="screens-band">
+      <div class="screens-row row-l">
+        <div class="sshot"><img src="../assets/projects/penny/screen-accountants-team.png" alt="Accountants — Team" /></div>
+        <div class="sshot"><img src="../assets/projects/penny/screen-pay-dashboard.png" alt="Pay — Dashboard" /></div>
+        <div class="sshot"><img src="../assets/projects/penny/screen-settings-profile.png" alt="Settings — Profile information" /></div>
+      </div>
+      <div class="screens-row row-r">
+        <div class="sshot"><img src="../assets/projects/penny/screen-addbill-manually.png" alt="Add a bill — Manually" /></div>
+        <div class="sshot"><img src="../assets/projects/penny/screen-addbill-upload.png" alt="Add a bill — Upload file" /></div>
+      </div>
+      <div class="screens-row row-l">
+        <div class="sshot"><img src="../assets/projects/penny/screen-multicompany-dashboard.png" alt="Multi-company — Dashboard" /></div>
+        <div class="sshot"><img src="../assets/projects/penny/screen-batch-payment.png" alt="Batch payment" /></div>
+      </div>
+      <div class="proj-media-panel__caption"><p>Pages Component</p><p class="sub">Click any page to enlarge.</p></div>
     </div>
 
     <div class="proj-container">
@@ -409,5 +422,18 @@
   <script src="../js/scroll-gallery.js" defer></script>
   <script src="../js/project-card-hover.js" defer></script>
   <script src="../js/lightbox.js" defer></script>
+  <script>
+    (function () {
+      var band = document.getElementById('screens-band');
+      if (!band) return;
+      if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { band.classList.add('slid'); io.disconnect(); }
+        });
+      }, { threshold: 0.25 });
+      io.observe(band);
+    })();
+  </script>
 </body>
 </html>
