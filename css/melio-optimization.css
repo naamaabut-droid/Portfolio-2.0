@@ -55,13 +55,10 @@
 }
 
 .proj-funnel-bar__rect {
+  display: block;
   width: 100%;
+  object-fit: cover;
   border-radius: 4px 4px 0 0;
-  background: linear-gradient(180deg, #e1f7f2 0%, #e7f2d6 45%, #c8ede2 100%);
-}
-
-.proj-funnel-bar--highlight .proj-funnel-bar__rect {
-  background: #1e1e1e;
 }
 
 .proj-funnel-bar__label {
