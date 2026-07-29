@@ -207,7 +207,6 @@
 
 .k-cell__frame img {
   position: absolute;
-  border: 1px solid var(--border-default);
   border-radius: var(--radius-xs, 8px);
   object-fit: cover;
 }
@@ -215,6 +214,7 @@
 .k-stack-back, .k-stack-front, .k-stack-l1, .k-stack-l2, .k-stack-l3 {
   width: 69.966%;
   height: 78.226%;
+  border: 1px solid var(--border-default);
 }
 
 .k-stack-back { left: 0; top: 0; }
