@@ -1,6 +1,6 @@
 (function () {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var strength = 60;
+  var strength = 220;
   document.querySelectorAll('.hero__glow, .proj-header__glow').forEach(function (glow) {
     var container = glow.closest('.hero, .proj-header');
     if (!container) return;
