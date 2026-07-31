@@ -130,40 +130,6 @@
   object-fit: cover;
 }
 
-.project-card__media--wixel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wixel-shots {
-  position: relative;
-  width: 76%;
-  height: 76%;
-}
-
-.wixel-shots img {
-  position: absolute;
-  border-radius: 7px;
-  width: auto;
-  height: 82%;
-  object-fit: cover;
-}
-
-.wixel-shots .shot-01 {
-  left: 0;
-  bottom: 0;
-  box-shadow: 0 35px 79px 0 rgba(30, 25, 60, 0.28), 0 5px 14px 0 rgba(30, 25, 60, 0.12);
-  z-index: 1;
-}
-
-.wixel-shots .shot-02 {
-  right: 0;
-  top: 0;
-  height: 74%;
-  box-shadow: 0 2px 4px 0 rgba(17, 17, 19, 0.08);
-}
-
 .project-card__body {
   padding-top: var(--space-24);
   display: flex;
