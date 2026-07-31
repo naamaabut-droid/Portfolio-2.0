@@ -96,6 +96,27 @@
   letter-spacing: -0.14px;
 }
 
+/* Mobile: back button becomes just the arrow icon, top-left */
+@media (max-width: 640px) {
+  .proj-header__nav {
+    top: 24px;
+    left: 24px;
+  }
+
+  .proj-header__back {
+    padding: 0;
+    gap: 0;
+    border: none;
+    background: none;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .proj-header__back-label {
+    display: none;
+  }
+}
+
 .proj-header__content {
   position: relative;
   z-index: 2;

@@ -44,3 +44,84 @@
   border-color: var(--text-primary);
   color: #fff;
 }
+
+/* Hamburger toggle — hidden on desktop */
+.nav-pill__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+.nav-pill__toggle span,
+.nav-pill__toggle span::before,
+.nav-pill__toggle span::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #1e1e1e;
+  border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.nav-pill__toggle span {
+  position: relative;
+}
+
+.nav-pill__toggle span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+.nav-pill__toggle span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+.nav-pill.is-open .nav-pill__toggle span {
+  background: transparent;
+}
+
+.nav-pill.is-open .nav-pill__toggle span::before {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.nav-pill.is-open .nav-pill__toggle span::after {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile: collapse the pill into a hamburger dropdown */
+@media (max-width: 640px) {
+  .nav-pill {
+    top: 24px;
+    right: 24px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-4);
+    padding: var(--space-8);
+  }
+
+  .nav-pill__toggle {
+    display: flex;
+    align-self: flex-end;
+  }
+
+  .nav-pill__item {
+    display: none;
+    text-align: center;
+  }
+
+  .nav-pill.is-open .nav-pill__item {
+    display: block;
+  }
+}
