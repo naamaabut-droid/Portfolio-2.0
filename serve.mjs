@@ -22,7 +22,11 @@ createServer(async (req, res) => {
     const file = normalize(join(root, path));
     if (!file.startsWith(root)) throw new Error('forbidden');
     const data = await readFile(file);
-    res.writeHead(200, { 'Content-Type': types[extname(file)] || 'application/octet-stream' });
+    res.writeHead(200, {
+      'Content-Type': types[extname(file)] || 'application/octet-stream',
+      // local preview only — never serve a stale file while iterating
+      'Cache-Control': 'no-store, must-revalidate',
+    });
     res.end(data);
   } catch {
     res.writeHead(404);
